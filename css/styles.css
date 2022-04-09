@@ -10,6 +10,7 @@
 
 body {
     font-family: Roboto, sans-serif;
+    color: #757575;
 }
 
 .link {
@@ -122,8 +123,6 @@ color: var(--text)
 }
 
 .peculiar-text {
-font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -170,7 +169,6 @@ color: var(--text)
 }
 
 .team-text {
-font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
@@ -228,7 +226,8 @@ color: var(--main-text)
    text-align: center;
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
-    color: var(--text)
+    color: var(--text);
+    cursor: pointer;
     
 }
 /* --------main-portfolio */
@@ -246,7 +245,6 @@ color: var(--main-text)
 }
 
 .portfolio-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
    letter-spacing: 0.03em;
