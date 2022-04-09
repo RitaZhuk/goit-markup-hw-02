@@ -1,5 +1,5 @@
 :root {
-    --header-link: #212121;
+    --site-link: #212121;
     --btn-color: #ffffff;
     --title-color: #ffffff;
     --text-color: #757575;
@@ -22,7 +22,7 @@ body {
 
 /* ---------------HEADER------------ */
 
-.header-logo {
+.site-logo {
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
@@ -39,31 +39,36 @@ color: var(--accent-color)
     color: #000000;
 }
 
-.header-link {
+
+.site-link .link .current {
+    color: var(--accent-color);
+}
+
+.site-link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--header-link)
+color: var(--site-link)
 }
 
-.header-link:hover, .header-link:focus {
+.site-link:hover, .site-link:focus {
     color: var(--accent-color)
 }
 
 
-.header-mail {
+.site-mail {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
 }
-.header-mail:hover, .header-mail:focus {
+.site-mail:hover, .site-mail:focus {
     color: var(--accent-color)
 }
 
-.header-tel {
+.site-tel {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -71,7 +76,7 @@ letter-spacing: 0.02em;
 color: #757575;
 }
 
-.header-tel:hover, .header-tel:focus {
+.site-tel:hover, .site-tel:focus {
     color: var(--accent-color)
 }
 
@@ -100,7 +105,11 @@ color: #757575;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--btn-color);
-    background-color: var(--accent-color);
+    cursor: pointer;
+    }
+
+    .main-btn:hover, .main-btn:focus {
+        color: var(--accent-color);
     }
 
     /* --------------PECULIAR-------------------- */
@@ -119,6 +128,7 @@ color: #212121;
 }
 
 .peculiar-text {
+font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -127,4 +137,87 @@ color: #757575;
 }
 
 /* ---------------ACTIVITY------------ */
+
+.activity-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color)
+}
+
+/* ----------------TEAM------------- */
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
+.team-second-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--second-title-color);
+}
+
+.team-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+/* -----------FOOTER----------- */
+
+.contacts {
+    background-color: #2F303A;
+}
+
+.contacts-web {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.contacts-studio {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.contacts-link-adress {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.contacts-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----стили для portfolio.html------ */
+
 
