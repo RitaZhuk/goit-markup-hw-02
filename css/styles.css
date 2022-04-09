@@ -1,4 +1,130 @@
+:root {
+    --header-link: #212121;
+    --btn-color: #ffffff;
+    --title-color: #ffffff;
+    --text-color: #757575;
+    --second-title-color: #212121;
+    --accent-color: #2196F3;
+    --background: #2F303A;
+}
+
 body {
-    background-color: E5E5E5;
     font-family: Roboto, sans-serif;
 }
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* ---------------HEADER------------ */
+
+.header-logo {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--accent-color)
+}
+
+.logo-web {
+    color: var(--accent-color)
+}
+
+.logo-studio {
+    color: #000000;
+}
+
+.header-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--header-link)
+}
+
+.header-link:hover, .header-link:focus {
+    color: var(--accent-color)
+}
+
+
+.header-mail {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+.header-mail:hover, .header-mail:focus {
+    color: var(--accent-color)
+}
+
+.header-tel {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.header-tel:hover, .header-tel:focus {
+    color: var(--accent-color)
+}
+
+/* -----------------MAIN------------------- */
+
+.main-section {
+    background-color: var(--background)
+}
+
+.main-title-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+.mane-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--btn-color);
+    background-color: var(--accent-color);
+    }
+
+    /* --------------PECULIAR-------------------- */
+
+    .peculiar {
+
+    }
+
+.peculiar-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+
+.peculiar-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+/* ---------------ACTIVITY------------ */
+
