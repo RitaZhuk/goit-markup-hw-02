@@ -1,11 +1,11 @@
 :root {
-    --site-link: #212121;
-    --btn-color: #ffffff;
-    --title-color: #ffffff;
-    --text-color: #757575;
-    --second-title-color: #212121;
-    --accent-color: #2196F3;
+    --main-text: #757575;
+    --text: #212121;
+    --accent: #2196F3;
+    --white: #ffffff;
+    --footer-mail: rgba(255, 255, 255, 0.6);
     --background: #2F303A;
+    --background-team: #F5F4FA;
 }
 
 body {
@@ -19,65 +19,62 @@ body {
 .list {
     list-style: none;
 }
-
-/* ---------------HEADER------------ */
-
-.site-logo {
+/* -------------SITE------------- */
+.logo {
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: var(--accent-color)
+color: var(--accent)
 }
 
 .logo-web {
-    color: var(--accent-color)
+    color: var(--accent)
 }
 
 .logo-studio {
-    color: #000000;
-}
-
-
-.site-link .link .current {
-    color: var(--accent-color);
+    color: var(--text)
 }
 
 .site-link {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--site-link)
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text)
+}
+
+.site-list .site-link .current {
+    color: #2196F3;
 }
 
 .site-link:hover, .site-link:focus {
-    color: var(--accent-color)
+    color: var(--accent)
 }
-
 
 .site-mail {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text)
 }
+
 .site-mail:hover, .site-mail:focus {
-    color: var(--accent-color)
+    color: var(--accent)
 }
 
 .site-tel {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text)
 }
 
 .site-tel:hover, .site-tel:focus {
-    color: var(--accent-color)
+    color: var(--accent)
 }
 
 /* -----------------MAIN------------------- */
@@ -92,7 +89,7 @@ color: #757575;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--title-color);
+    color: var(--white)
 }
 
 .mane-btn {
@@ -104,19 +101,16 @@ color: #757575;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--btn-color);
+    color: var(--white);
+    background-color: var(--accent);
     cursor: pointer;
     }
 
     .main-btn:hover, .main-btn:focus {
-        color: var(--accent-color);
+        color: #197ed1;
     }
 
     /* --------------PECULIAR-------------------- */
-
-    .peculiar {
-
-    }
 
 .peculiar-title {
 font-weight: 700;
@@ -124,7 +118,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;
+color: var(--text)
 }
 
 .peculiar-text {
@@ -133,7 +127,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--main-text)
 }
 
 /* ---------------ACTIVITY------------ */
@@ -144,13 +138,13 @@ color: #757575;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--second-title-color)
+    color: var(--text)
 }
 
 /* ----------------TEAM------------- */
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--background-team)
 }
 
 .team-title {
@@ -162,13 +156,17 @@ color: #757575;
     color: var(--second-title-color);
 }
 
+.team-item {
+    background-color: var(--white)
+}
+
 .team-second-title {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--second-title-color);
+color: var(--text)
 }
 
 .team-text {
@@ -177,29 +175,31 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--main-text)
 }
 
 /* -----------FOOTER----------- */
 
 .contacts {
-    background-color: #2F303A;
+    background-color: var(--background)
 }
 
 .contacts-web {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: var(--accent)
 }
 
 .contacts-studio {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white)
 }
 
 .contacts-link-adress {
@@ -207,7 +207,7 @@ color: #757575;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white)
 }
 
 .contacts-link {
@@ -215,9 +215,40 @@ color: #757575;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-mail)
 }
 
 /* ----стили для portfolio.html------ */
 
+.btn-filtr {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+   text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    color: var(--text)
+    
+}
+/* --------main-portfolio */
+.btn-filtr:hover, .btn-filtr:focus {
+    background-color: #2196F3;
+    color: var(--white);
+}
 
+.portfolio-top {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text)
+}
+
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+   letter-spacing: 0.03em;
+    color: var(--main-text)
+}
