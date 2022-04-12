@@ -50,7 +50,7 @@ color: var(--accent)
     color: var(--accent)
 }
 
-.site-nav .link .current {
+.link.current {
     color: var(--accent);
 }
 
